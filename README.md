@@ -3,26 +3,8 @@
 This project is a modular DevOps automation system that integrates with Slack and uses AI to assist with various DevOps tasks.
 
 ## Architecture
-+-------------------+
-| Slack App |
-+--------+----------+
-|
-v
-+--------+----------+ +-------------------+
-| Main Script +---->+ AI Assistant |
-+--------+----------+ +-------------------+
-|
-v
-+--------+----------+
-| Tool Manager |
-+--------+----------+
-|
-+----+----+
-| |
-+---v---+ +---v---+
-| Tool1 | | Tool2 |
-+-------+ +-------+
-text
+![slackapp](https://github.com/user-attachments/assets/83c26aa2-ba94-4a74-a95b-dd5be3f6eeac)
+
 
 ## Components
 
@@ -41,7 +23,7 @@ text
 
 ## Project Structure
 
-
+```
 devops_automation/
 ├── main.py
 ├── tool_manager.py
@@ -53,7 +35,7 @@ devops_automation/
 │ └── kubernetes_tool.py
 └── tests/
 └── test_tool_manager.py
-text
+```
 
 ## Setup
 
@@ -66,19 +48,20 @@ text
 2. Install dependencies:
 
 pip install -r requirements.txt
-text
 
 3. Set up environment variables:
 
 export SLACK_BOT_TOKEN=your_slack_bot_token
+
 export SLACK_APP_TOKEN=your_slack_app_token
+
 export OPENAI_API_KEY=your_openai_api_key
-text
+
 
 4. Run the main script:
 
 python main.py
-text
+
 
 ## Usage
 
@@ -86,13 +69,13 @@ To use the DevOps Automation System, interact with it through Slack using the fo
 
 
 /devops <tool> <task> [args]
-text
+
 
 For example:
 
 /devops terraform create_cluster
 /devops kubernetes deploy_app myapp nginx:latest 3
-text
+
 
 ## Adding New Tools
 
@@ -122,7 +105,7 @@ class NewTool(BaseTool):
 The Tool Manager will automatically load and make the new tool available.
 Running Tests
 To run the unit tests:
-text
+
 python -m unittest discover tests
 
 Contributing
@@ -138,7 +121,7 @@ Acknowledgements
 Slack Bolt for Python
 OpenAI GPT-3
 Kubernetes Python Client
-text
+
 
 4. Save the file and exit the text editor. If you're using nano, you can do this by pressing `Ctrl+X`, then `Y`, and finally `Enter`.
 

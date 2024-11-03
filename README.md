@@ -41,9 +41,8 @@ devops_automation/
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/devops_automation.git
+git clone https://github.com/venkatmarella/devops_automation.git
 cd devops_automation
-text
 
 2. Install dependencies:
 
